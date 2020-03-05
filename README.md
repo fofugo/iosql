@@ -15,7 +15,7 @@ go get -u github.com/fofugo/iosql
 <h2>feature</h2>
 <ul>
   <li>Bulk insert need safety way, against panic</li>
-  <li>so iosql offer to the way by file io query in dir</li>
+  <li>so iosql offers the way by file io query in dir</li>
 </ul>
 
 <h2>example</h2>
