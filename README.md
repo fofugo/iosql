@@ -20,6 +20,16 @@ go get -u github.com/fofugo/iosql
 
 <h2>example</h2>
 
+```
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| col1  | char(5) | YES  |     | NULL    |       |
+| col2  | int     | YES  |     | NULL    |       |
+| col3  | int     | YES  |     | NULL    |       |
++-------+---------+------+-----+---------+-------+
+```
+
 ```go
 package main
 
@@ -100,7 +110,7 @@ func main() {
 		}
 	}()
 	for i := 0; i < 50; i++ {
-		msg <- []interface{}{"co1", 1, 3}
+		msg <- []interface{}{"value1", 1, 3}
 	}
 	time.Sleep(4 * time.Second)
 	cancel()
