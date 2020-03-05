@@ -100,7 +100,7 @@ func main() {
 		}
 	}()
 	for i := 0; i < 50; i++ {
-		msg <- []interface{}{"co1", "1", "1"}
+		msg <- []interface{}{"co1", 1, 3.14}
 	}
 	time.Sleep(4 * time.Second)
 	cancel()
